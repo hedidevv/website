@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Shop</title>
+    <link rel="stylesheet" href="../css/bootsrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+      <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Swiper Js -->
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body dir="rtl" >
+
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  shadow-sm py-3 fixed-top auth-nav" id="first-nav">
+  <div class="container-fluid custom-container">
+    <a class="navbar-brand  fs-3" href="#">کۆگای شەن</a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">کۆگای شەن</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pe-0">
+
+           <ul class="navbar-nav mx-lg-auto  pe-5 d-lg-flex align-items-lg-center mt-2">
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link active" href="../pages/index.html"><i class="fa fa-home  fs-6"></i> پەڕەی سەرەکی</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link" href="../pages/shop.html">بازاڕکردن</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link" href="#">کۆگا</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link" href="#">دەربارە</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link" href="#">پەیوەندی</a>
+          </li>
+       
+        </ul>
+        <div class="d-flex align-items-lg-center" id="language">
+        
+          <ul class="navbar-nav card-love me-lg-auto pe-5 mb-2 mb-lg-0 mt-sm-4 mt-lg-3 align-items-lg-center" >
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary " href="#"><i class="fa fa-heart "></i> دڵخوازەکان</a>
+        </li>
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary" href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i> سەبەتەکەم</a>
+        </li>
+           <div class="d-flex align-items-center mt-3 ms-5">
+                <p>  گۆڕینی دۆخ</p>
+            <div id="dark-btn" ><span></span> </div>
+           </div>
+        </ul>
+
+
+  </div>
+    </div>
+    </div>
+  </div>
+
+</nav>
+<!-- Navbar -->
+
+<section class="section-padding" id="contact">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center mt-4">پەیوەندیمان پێوە بکە</h3>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 mx-auto mt-5">
+                <form action="#">
+                    <div class="form-group mb-4">
+                        <input type="text" placeholder="ناو" class="form-control">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" placeholder="ئیمەیلەکەت" class="form-control">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" placeholder="بابەت" class="form-control">
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea name="" id="" rows="5" class="form-control" placeholder="نامەکەت بنووسە"></textarea>
+                    </div>
+                    <button class="btn btn-outline-success px-5 py-2 ">ناردن</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="../js/bootsrap.js"></script>
+<script src="../js/code.js"></script>
+</body>
+</html>

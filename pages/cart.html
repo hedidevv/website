@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Shop</title>
+    <link rel="stylesheet" href="../css/bootsrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+      <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Swiper Js -->
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body dir="rtl" >
+
+
+    <!--First Navbar -->
+    <nav class="navbar navbar-expand-lg  shadow-sm py-2" id="first-nav">
+  <div class="container-fluid custom-container">
+    <a class="navbar-brand mt-3 fs-3" href="#">کۆگای شەن</a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">کۆگای شەن</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+             <form class="d-flex align-items-center mt-3 mx-auto search-box" role="search">
+                
+           <li class="nav-item dropdown list-unstyled d-lg-block d-sm-none">
+          <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            هەموو جۆرەکان
+          </a>
+          <ul class="dropdown-menu mt-3 " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">پۆشاکەکان</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">خواردنەکان</a></li>
+             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">کەلوپالی ناو ماڵ</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">ئامێرە ئەلیکرۆنیەکان</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> شیرینییەکان </a></li>
+          </ul>
+        </li>
+          <input class="form-control me-2" type="search" placeholder="گەڕان بؤ کاڵاکان" aria-label="Search">
+         <a href="#" class="fs-4 text-secondary"><i class="fa-solid fa-magnifying-glass mt-2"></i></a>
+        </form>
+
+        <div class="d-flex align-items-center mt-4" id="language">
+          <li class="list-unstyled ms-3">
+          <label for="language"> گۆڕینی زمان:</label>
+          <select name="" id="language" class=" language border-0 ">
+            <option value="کوردی" >کوردی</option>
+            <option value="">عەرەبی</option>
+            <option value="">ئینگلیزی</option>
+          </select>
+        </li>
+
+            <!-- Dark Mode -->
+            <div class="d-flex align-items-center mt-3 ms-5">
+                <p>  گۆڕینی دۆخ</p>
+            <div id="dark-btn" >
+                 
+                <span></span>
+            </div>
+           </div>
+        </div>
+      
+
+          <!-- Second Nav Small Screen  -->
+        <div class="d-sm-block d-lg-none">
+
+            <ul class="navbar-nav ms-auto px-0 mb-2 mb-lg-0">
+             
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="index.html">پەڕەی سەرەکی</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="shop.html">بازاڕکردن</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="#">کۆگا</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="#">دەربارە</a>
+              </li>
+              <li class="nav-item mx-lg-3 ">
+                <a class="nav-link" href="#">پەیوەندی</a>
+              </li>
+         
+            </ul>
+          
+
+            
+      <ul class="navbar-nav card-love me-auto pe-0 mb-2 mb-lg-0 mt-sm-4 mt-lg-3 align-items-lg-center" >
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary " href="#"><i class="fa fa-heart "></i> دڵخوازەکان</a>
+        </li>
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> سەبەتەکەم</a>
+        </li>
+     
+           <li class="nav-item mx-lg-2 fs-5 dropdown list-unstyled">
+          <a class="nav-link  text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"> هەژمار</i>
+          </a>
+          <ul class="dropdown-menu user-dropdown " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item fw-bold text-end" href="login.html">  <i class=" ms-2 fa-solid fa-user text-secondary"></i> چونەژوورەوە</a></li>
+            <li><a class="dropdown-item fw-bold text-end" href="register.html"> <i class=" ms-2 fa-solid fa-user-plus text-secondary"></i>درووستکردنی هەژمار</a></li>
+          </ul>
+        </li>
+  </ul>
+
+        </div>
+<!-- End Of Second Nav Small Screen -->
+
+  </div>
+    </div>
+    </div>
+  </div>
+
+</nav>
+
+    <!-- End OF First Navbar -->
+
+ <!-- Second Navigation Bar -->
+
+ <nav class="navbar navbar-expand-lg navbar-light py-3 d-sm-none d-lg-block border-bottom " id="second-nav">
+  <div class="container-fluid custom-container">
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-0">
+       
+        <li class="nav-item px-lg-3">
+          <a class="nav-link active" href="index.html"> <i class="fa fa-home ms-2 fs-6"></i> پەڕەی سەرەکی</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="shop.html">بازاڕکردن</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="#">کۆگا</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="#">دەربارە</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="#">پەیوەندی</a>
+        </li>
+   
+      </ul>
+
+
+
+
+      <ul class="navbar-nav card-love me-auto pe-0 mb-2 mb-lg-0 mt-sm-4 mt-lg-3 align-items-lg-center" >
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary " href="#"><i class="fa fa-heart "></i> دڵخوازەکان</a>
+        </li>
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> سەبەتەکەم</a>
+        </li>
+     
+           <li class="nav-item mx-lg-2 fs-5 dropdown list-unstyled">
+          <a class="nav-link  text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"> هەژمار</i>
+          </a>
+          <ul class="dropdown-menu user-dropdown " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item fw-bold text-end" href="../auth/login.html">  <i class=" ms-2 fa-solid fa-user text-secondary"></i> چونەژوورەوە</a></li>
+            <li><a class="dropdown-item fw-bold text-end" href="../auth/register.html"> <i class=" ms-2 fa-solid fa-user-plus text-secondary"></i>درووستکردنی هەژمار</a></li>
+          </ul>
+        </li>
+  </ul>
+
+    </div>
+  </div>
+</nav>  
+
+ <!--End Of Second Navigation Bar -->
+
+
+<section class="section-padding my-cart">
+  <div class="container-fluid px-0">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="mb-5 me-5">سەبەتەکەم</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="../js/bootsrap.js"></script>
+<script src="../js/code.js"></script>
+</body>
+</html>

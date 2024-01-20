@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Shop</title>
+    <link rel="stylesheet" href="../css/bootsrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+      <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Swiper Js -->
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body dir="rtl" id="home">
+    
+
+    <!--First Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm py-2" id="first-nav">
+  <div class="container-fluid align-items-center">
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand mt-lg-3 fs-3" href="#">کۆگای شەن</a>
+    <!--  -->
+          <ul class="navbar-nav card-love me-auto pe-0 mb-2 mb-lg-0 mt-sm-4 mt-lg-3 align-items-lg-center d-sm-flex flex-sm-row d-lg-none" id="cart-love">
+
+        <li class="nav-item circle mx-lg-2 fs-5 px-sm-2">
+          <a class="nav-link text-secondary  " href="#"><i class="fa fa-heart "></i> </a>
+        </li>
+        <li class="nav-item circle mx-lg-2 fs-5 px-sm-2">
+          <a class="nav-link text-secondary " href="cart.html"><i class="fa-solid fa-cart-shopping"></i> </a>
+        </li>
+     
+      
+  </ul>
+    <!--  -->
+
+
+
+
+
+
+
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">کۆگای شەن</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+             <form class="d-flex align-items-center mt-3 mx-auto search-box" role="search">
+                
+           <li class="nav-item dropdown list-unstyled ">
+          <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            هەموو جۆرەکان
+          </a>
+          <ul class="dropdown-menu mt-3 search-dropdown " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">پۆشاکەکان</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">خواردنەکان</a></li>
+             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">کەلوپالی ناو ماڵ</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">ئامێرە ئەلیکرۆنیەکان</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> شیرینییەکان </a></li>
+          </ul>
+        </li>
+          <input class="form-control me-2" type="search" placeholder="گەڕان بؤ کاڵاکان" aria-label="Search">
+         <a href="#" class="fs-4 text-secondary"><i class="fa-solid fa-magnifying-glass mt-2"></i></a>
+        </form>
+
+        <div class="d-flex align-items-center mt-4" id="language">
+          <li class="list-unstyled ms-3">
+          <label for="language"> گۆڕینی زمان:</label>
+          <select name="" id="language" class=" language border-0 ">
+            <option value="کوردی" >کوردی</option>
+            <option value="">عەرەبی</option>
+            <option value="">ئینگلیزی</option>
+          </select>
+        </li>
+
+            <!-- Dark Mode -->
+            <div class="d-flex align-items-center mt-3 ms-5">
+                <p>  گۆڕینی دۆخ</p>
+            <div id="dark-btn" >
+                 
+                <span></span>
+            </div>
+           </div>
+        </div>
+      
+
+          <!-- Second Nav Small Screen  -->
+        <div class="d-sm-block d-lg-none">
+
+            <ul class="navbar-nav ms-auto px-0 mb-2 mb-lg-0">
+             
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="index.html">پەڕەی سەرەکی</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="shop.html">بازاڕکردن</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="#">کۆگا</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="#">دەربارە</a>
+              </li>
+              <li class="nav-item mx-lg-3 ">
+                <a class="nav-link" href="contact.html">پەیوەندی</a>
+              </li>
+         
+            </ul>
+          
+
+            
+
+
+        </div>
+<!-- End Of Second Nav Small Screen -->
+
+  </div>
+    </div>
+    </div>
+  </div>
+
+</nav>
+
+    <!-- End OF First Navbar -->
+
+ <!-- Second Navigation Bar -->
+
+ <nav class="navbar navbar-expand-lg navbar-light py-3 d-sm-none d-lg-block border-bottom " id="second-nav">
+  <div class="container-fluid custom-container">
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-0">
+       
+        <li class="nav-item px-lg-3">
+          <a class="nav-link active" href="#home"> <i class="fa fa-home ms-2 fs-6"></i> پەڕەی سەرەکی</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="shop.html">بازاڕکردن</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="#">کۆگا</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="#">دەربارە</a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link" href="contact.html">پەیوەندی</a>
+        </li>
+   
+      </ul>
+
+
+
+
+      <ul class="navbar-nav card-love me-auto pe-0 mb-2 mb-lg-0 mt-sm-4 mt-lg-3 align-items-lg-center" >
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary " href="#"><i class="fa fa-heart "></i> دڵخوازەکان</a>
+        </li>
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> سەبەتەکەم</a>
+        </li>
+     
+           <li class="nav-item mx-lg-2 fs-5 dropdown list-unstyled">
+          <a class="nav-link  text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"> هەژمار</i>
+          </a>
+          <ul class="dropdown-menu user-dropdown " aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item fw-bold text-end" href="../auth/login.html">  <i class=" ms-2 fa-solid fa-user text-secondary"></i> چونەژوورەوە</a></li>
+            <li><a class="dropdown-item fw-bold text-end" href="../auth/register.html"> <i class=" ms-2 fa-solid fa-user-plus text-secondary"></i>درووستکردنی هەژمار</a></li>
+          </ul>
+        </li>
+  </ul>
+
+    </div>
+  </div>
+</nav>  
+
+ <!--End Of Second Navigation Bar -->
+
+ <!-- Small Screen Bottom Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-bottom bg-dark d-sm-block d-lg-none  border-top bottom-nav" >
+  <div class="container-fluid custom-container">
+   
+    <div class=" navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 px-0 d-flex flex-row justify-content-between ">
+       
+        <li class="nav-item px-lg-3">
+          <a class="nav-link text-white text-center" href="#home"> <i class="fa fa-home  fs-6 "></i>  <p>پەڕەی سەرەکی</p></a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link text-white text-center" href="shop.html"><i class="fa-solid fa-bag-shopping fs-6"></i><p>بازاڕکردن</p></a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link text-white text-center" href="#"><i class="fa fa-cart-shopping fs-6 "></i><p>سەبەتەکەم</p></a>
+        </li>
+        <li class="nav-item px-lg-3">
+          <a class="nav-link text-white text-center navbar-toggler mt-2 shadow-none border-0" href="#"><i class="fa fa-search fs-6 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i><p class="mt-2">گەڕان</p></a>
+        </li>
+        <li class="nav-item  px-lg-3 ">
+          <a class="nav-link text-white " href="../auth/login.html"><i class="fa fa-user fs-6 "></i><p>هەژمار</p></a>
+        </li>
+   
+      </ul>
+
+
+    </div>
+  </div>
+</nav> 
+ <!-- End Of Small Screen Bottom Nav -->
+
+
+<!-- Hero Section -->
+<section id="hero">
+  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  </div>
+  <div class="carousel-inner px-3 mt-2 rounded-4">
+    <div class="carousel-item vh-100 bg-padding active slide-1">
+      <div class="custom-container h-50 d-flex  align-items-center">
+        <div class="row pe-5">
+          <div class="col-lg-8">
+            <h1 class="display-1 text-white">چێژی ڕاستەقینە لای ئێمەیە</h1>
+            <p >ۆریم پاریت کوانستودەر یاکس دلاریت پێرفیتان تۆتیناس یان مێل. فیناد بلاندیت ئیرت نای ئەیمت</p>
+            <div class="input-group hero-input mb-3 ">
+              <i class="fas fa-envelope mt-2 fs-4 text-secondary"></i>
+            <input type="text" class="form-control" placeholder="ئیمەیلەکەت داخڵ بکە">
+            <button class="btn btn-brand" type="button" id="button-addon2">هاوبەشیکردن</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item vh-100 bg-padding slide-2 bg-cover">
+      <div class="custom-container h-50 d-flex  align-items-center">
+        <div class="row pe-5">
+          <div class="col-lg-8">
+            <h1 class="display-1 text-white">  باشترین ئامێرە ئەلیکترۆنییەکان </h1>
+            <p>ۆریم پاریت کوانستودەر یاکس دلاریت پێرفیتان تۆتیناس یان مێل. فیناد بلاندیت ئیرت نای ئەیمت</p>
+            <div class="input-group hero-input mb-3">
+              <i class="fas fa-envelope mt-2 fs-4 text-secondary"></i>
+            <input type="text" class="form-control" placeholder="ئیمەیلەکەت داخڵ بکە" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-brand" type="button" id="button-addon2">هاوبەشیکردن</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<!--End Of Hero Section -->
+
+
+<!-- Categories Section -->
+
+<div class="section-padding px-5" id="categories">
+  <div class="custom-container">
+    <div class="row">
+      <div class="col-12">
+        <h1>هەموو جۆرەکانی کاڵا</h1>
+      </div>
+    </div>
+ 
+
+  <div class="swiper mySwiper py-5 px-5">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class=" card-content">
+          <img src="../img/img-1.png" height="200px">
+          <h5>کامێرا</h5>
+          <p>٣٠ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-2.png" height="200px">
+          <h5>‌هێدسێتی گەیمینگ</h5>
+          <p>١٠ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-3.png" height="200px">
+          <h5>فڕنی نان</h5>
+          <p> ٨ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-4.png" height="200px">
+          <h5>لاپتۆپ</h5>
+          <p>١٠ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-5.png" height="200px">
+          <h5>گسکی کارەبایی</h5>
+          <p>٥ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-6.png" height="200px">
+          <h5>fast food</h5>
+          <p>1 item</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-8.png" height="200px">
+          <h5>جانتا</h5>
+          <p>١٣ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-9png.png" height="200px">
+          <h5>تی شێرت</h5>
+          <p>٣٠ دانە</p>
+        </div>
+      </div>
+      <div class="swiper-slide px-sm-2 px-md-0">
+        <div class="  card-content">
+          <img src="../img/img-10.png" height="200px">
+          <h5>کڵاو</h5>
+          <p>٢٥ دانە</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+
+
+      
+    </div>
+  </div>
+
+
+<!-- End Categories Section -->
+
+
+<!-- Hero -->
+<div class="section-padding">
+  <div class="custom-container">
+    <div class="row gy-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="shop-card-1 card-shop bg-cover">
+          <h4 class="mt-5 text-white">هەموو کاڵا نایابەکان لای ئێمە بە دەست بهێنە لەگەڵ داشکانی تایبەت</h4>
+          <a href="#shop" class="btn btn-shop mt-4">  کڕین <i class="fa-solid fa-arrow-left mt-2 me-1 fs-6"></i> </a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="shop-card-2 card-shop bg-cover">
+          <h4 class="mt-5 text-white">  چێژی ڕاستەقینە لای ئێمەیە <br> ئێستا داوا بکە</h4>
+          <a href="#shop" class="btn btn-shop mt-4">  کڕین <i class="fa-solid fa-arrow-left mt-2 me-1 fs-6"></i> </a>
+        </div>
+      </div>
+      <div class="col-sm-12  col-lg-4 ">
+        <div class="shop-card-3 card-shop bg-cover">
+          <h4 class="mt-5 text-white">هەموو کاڵا نایابەکان لای ئێمە بە دەست بهێنە لەگەڵ داشکانی تایبەت</h4>
+          <a href="#shop" class="btn btn-shop mt-4">  کڕین <i class="fa-solid fa-arrow-left mt-2 me-1 fs-6"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Of Hero Shop -->
+ 
+<!-- Popular Products -->
+
+<section class="section-padding" id="popular">
+  <div class="custom-container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-5">باوترین کاڵاکان</h1>
+      </div>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+        <h1 class="modal-title fs-5 flex-grow-1" id="exampleModalLabel">دەربارەی کاڵا</h1>
+        <button type="button" class="btn-close me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center"> 
+        <div class="col-6 ">
+          <h4>لاپتۆپ hp zbook</h4>
+          <p class="mb-0">Hard : 512GB</p>
+          <p class="mb-0">Ram : 16</p>
+          <p class="mb-0">Screen : 15.3 inch</p>
+          <p class="mb-0">Keyboard: Led</p>
+          <span>نرخ : 600$</span>
+           <div class="stars my-3 text-warning">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+         
+        </div>
+        <div class="col-6  me-auto ">
+          <img src="../img/img-8.png" id="card-img" >
+        </div>
+       
+      </div>
+       
+      <button class="btn btn-outline-success w-50 mb-4 me-3"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping me-2"></i> </button>
+
+
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- End Of Modal Modal-->
+       <!-- Toast -->
+                <div class="toast-container position-fixed top-0 end-0 p-3">
+                  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      <i class="fa fa-check-circle ms-2 text-success"></i>
+                      کاڵاکە بە سەرکەوتویی زیاد کرا
+                    </div>
+                  </div>
+                </div>
+                <!-- End Toast -->
+    <div class="row gy-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-3.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+             <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-1.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+           <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button>     
+            
+         </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-2.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+             <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-4.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+             <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-5.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+             <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-6.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+             <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-8.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+             <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="cards">
+          <p>%30 -</p>
+         <div class="btn-group">
+          <a href="#" class="btn aria-current=" data-bs-toggle="tooltip" title="زیادی بکە بؤ دڵخوازەکان"><i class="fa-solid fa-heart"></i></a>
+          <a href="#" class="btn aria-current=" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" title="دەربارەی کاڵا"><i class="fa-solid fa-circle-info"></i></a>
+        </div>
+          <img src="../img/img-9png.png">
+          <h5 class="mb">لۆریم ئیپسوم، یان لیپسوم</h5>
+          <div class="stars my-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+            <span>(4.5)</span>
+          </div>
+          <h4 class="mb-3">لەلایەن <a href="#" class="text-decoration-none fw-bold text-primary">دیما ستۆر</a> دەفرۆشرێت</h4>
+          <div class="price d-flex justify-content-between align-items-center">
+            <h5>500$</h5>
+            <button class="btn btn-success text-white" id="liveToastBtn"> زیادی بکە بۆ سەبەتە <i class="fa fa-cart-shopping"></i></button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Of Popular Products -->
+<!-- Footer Section -->
+
+<!--End Of Footer Section -->
+
+<footer class="footer-padding" id="footer">
+  <div class="custom-container">
+    <div class="row gy-5">
+       <h2 class="mb-4">کۆگای شەن</h2>
+      <div class="col-sm-6 col-md-4 text-center">
+        <div class="right-col">
+         <h4 class="mb-3 border-bottom d-inline-block">پەیوەندی</h4>
+          <div class="right-col-info">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa fa-envelope ms-3 fs-5"></i>
+              <h4>Shan@gmail.com</h4>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa fa-phone-alt ms-3 fs-5"></i>
+             <div class="mt-3">
+               <h4> 000 0000 0770 </h4>
+              <h4> 000 0000 0770 </h4>
+             </div>
+            </div>
+            
+           <div class="footer-socials ">
+            <i class="fa-brands fa-facebook fs-4 px-2 mt-3 "></i>
+            <i class="fa-brands fa-instagram fs-4 px-2 mt-3 "></i>
+            <i class="fa-brands fa-twitter fs-4 px-2 mt-3 "></i>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 text-center">
+        <div class="left-col">
+          <h4 class="border-bottom d-inline-block">زانیارییەکان</h4>
+          <ul class="list-unstyled pe-0">
+            <li class="my-3"><a href="about.html" class="text-decoration-none"> پۆشاکەکان</a></li>
+            <li class="my-3"><a href="shop.html" class="text-decoration-none"> ئامێرە ئەلیکترۆنییەکان</a></li>
+            <li class="my-3"><a href="#" class="text-decoration-none"> کالاکان </a></li>
+            <li class="my-3"><a href="contact.html" class="text-decoration-none">  کەلوپەلی ناوماڵ</a></li>
+            <li class="my-3"><a href="contact.html" class="text-decoration-none">خواردنەکان</a></li>
+            <li class="my-3"><a href="contact.html" class="text-decoration-none"> شیرینییەکان </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 text-center">
+        <div class="middle-col">
+          <h4 class="border-bottom d-inline-block">دەربارە</h4>
+          <ul class="list-unstyled pe-0 ">
+            <li class="my-3"><a href="about.html" class="text-decoration-none">دەربارەی ئێمە</a></li>
+            <li class="my-3"><a href="contact.html" class="text-decoration-none"> پەیوەندی کردن</a></li>
+            <li class="my-3"><a href="shop.html" class="text-decoration-none"> بازاڕکردن </a></li>
+            <li class="my-3"><a href="cart.html" class="text-decoration-none"> سەبەتەکەم </a></li>
+            <li class="my-3"><a href="love.html" class="text-decoration-none"> دڵخوازەکان </a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center mt-5 border-top">Copy Right by @shan-shop all reight reversed 2023</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Footer Section -->
+    
+<!--End Footer Section -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/bootsrap.js"></script>
+    <script src="../js/code.js"></script>
+</body>
+</html>

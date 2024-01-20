@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shan Shop</title>
+    <link rel="stylesheet" href="../css/bootsrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Swiper Js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body dir="rtl">
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  shadow-sm py-3 fixed-top" id="first-nav">
+  <div class="container-fluid custom-container">
+    <a class="navbar-brand  fs-3" href="#">کۆگای شەن</a>
+    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">کۆگای شەن</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pe-0">
+
+           <ul class="navbar-nav mx-lg-auto  pe-5 d-lg-flex align-items-lg-center mt-2">
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link  active" href="../pages/index.html"><i class="fa fa-home  fs-6"></i> پەڕەی سەرەکی</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link " href="#">بازاڕکردن</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link " href="#">کۆگا</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link " href="#">دەربارە</a>
+          </li>
+          <li class="nav-item px-lg-3">
+            <a class="nav-link link " href="../pages/contact.html">پەیوەندی</a>
+          </li>
+       
+        </ul>
+        <div class="d-flex align-items-lg-center" id="language">
+        
+          <ul class="navbar-nav card-love me-lg-auto pe-5 mb-2 mb-lg-0 mt-sm-4 mt-lg-3 align-items-lg-center" >
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary " href="#"><i class="fa fa-heart "></i> دڵخوازەکان</a>
+        </li>
+        <li class="nav-item circle mx-lg-2 fs-5">
+          <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-cart-shopping"></i> سەبەتەکەم</a>
+        </li>
+           <div class="d-flex align-items-center mt-3 ms-5">
+                <p>  گۆڕینی دۆخ</p>
+            <div id="dark-btn" >
+                 
+                <span></span>
+            </div>
+           </div>
+        </ul>
+
+
+  </div>
+    </div>
+    </div>
+  </div>
+
+</nav>
+<!-- Navbar -->
+
+
+
+
+    <!--  -->
+    <section id="register">
+    <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100">
+   
+       <div class="row d-flex align-items-center">
+        
+      <div class="col-sm-12 col-lg-7">
+         
+        <h2 class="mb-5 text-secondary">درووستکردنی هەژمار</h2>
+        <form action="#" class="register-form">
+          <div class="col-md-10">
+            <div class="input-group mb-3">
+              <div class="input-group-text">
+                <i class="fa fa-user fa-rotate-180 "></i>
+              </div>
+              <input type="text" class="form-control" placeholder="ناو">
+            </div>
+             <div class="input-group mb-3">
+              <div class="input-group-text">
+                <i class="fa fa-envelope fa-rotate-180 "></i>
+              </div>
+              <input type="email" class="form-control " placeholder="ئیمەیل">
+            
+            </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa fa-lock fa-rotate-180"></i></span>
+                <input type="password" minlength="8" maxlength="16" class="form-control" id="password" placeholder="وشە نهێنی">
+                <span class="input-group-text input-text-1">
+                  <i class="fa fa-eye-slash " id="eye-close"></i>
+                  <i class="fa fa-eye" id="eye-show"></i>
+                </span>
+              </div>
+                
+   
+
+             <div class="d-flex align-items-center justify-content-between">
+                       <!--  -->
+            <button type="button" class="btn btn-success" id="liveToastBtn">درووستکردنی هەژمار</button>
+
+                <div class="toast-container position-fixed top-0 end-0 p-3">
+                  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <strong class="ms-auto"> بەخێربێی هێدی</strong>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      <i class="fa fa-check-circle ms-2 text-success"></i>
+                      بە سەرکەوتوی هەژمارت درووستکردن
+                    </div>
+                  </div>
+                </div>
+            <!--  -->
+              <p class="mt-4 fs-6 text-secondary ">هەژمارت درووست کردووە ؟<a href="login.html" class="text-decoration-none"> چونەژوورەوە</a></p>
+            </div>
+          </div>
+        </form>
+
+
+
+      </div>
+      <div class="col-sm-12 col-lg-5 mt-sm-5">
+        <div class="featured-img">
+          <img src="../img/register.svg" width="400px" height="400px">
+        </div>
+      </div>
+     </div>
+    </div>
+    </section>
+    <!--  -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/bootsrap.js"></script>
+    <script src="../js/code.js"></script>
+  </body>
+</html>
